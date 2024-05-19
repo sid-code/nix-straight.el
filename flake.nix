@@ -8,6 +8,7 @@
   };
 
   outputs = {
+    self,
     nixpkgs,
     straight,
     ...
@@ -20,7 +21,10 @@
       }));
   in {
     lib = forEachSystem (
-      {pkgs, ...}: pkgs.callPackage ./.
+      {
+        pkgs,
+        system,
+      }: args: pkgs.callPackage ./. (args // {straight = self.packages.${system}.straight;})
     );
 
     packages = forEachSystem (
