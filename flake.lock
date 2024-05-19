@@ -1,0 +1,43 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1716079099,
+        "narHash": "sha256-0zL73zK5tB1NbzvB5all6+5W9I42RGCENNvddaIjuZg=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "68ead29211bb9890f494af3a8b5643a831d9d4c4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "straight": "straight"
+      }
+    },
+    "straight": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1697914229,
+        "narHash": "sha256-KZUNGvR+UNx1ZpmkEVseSFFRTWUH5+smF84f+5+oe4I=",
+        "owner": "radian-software",
+        "repo": "straight.el",
+        "rev": "b3760f5829dba37e855add7323304561eb57a3d4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "radian-software",
+        "repo": "straight.el",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
