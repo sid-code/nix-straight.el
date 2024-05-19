@@ -19,7 +19,7 @@
         pkgs = import nixpkgs {inherit system;};
       }));
   in {
-    emacsEnv = forEachSystem (
+    lib = forEachSystem (
       {pkgs, ...}: pkgs.callPackage ./.
     );
 
